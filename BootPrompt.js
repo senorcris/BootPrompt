@@ -66,7 +66,7 @@ function() {
                     .append(body.$el)
                     .append(footer.$el)
                     .modal("show");
-            if (_.isNumber(modalWidth)) {
+            if (_.isNumber(modalWidth) || _.isString(modalWidth)) {
                 this.$el.css({
                     'width': modalWidth,
                     'margin-left': function () {
