@@ -42,7 +42,7 @@ function() {
             });
         },
         render: function () {
-            console.log("Popup openned");
+            //console.log("Popup openned");
             var Section = this._createSection(),
                 closeBtn = '<button type="button" class="close" data-dismiss="modal">�</button>',
                 cancelBtn = '<a href="#" class="cancel btn">Cancel</a>',
