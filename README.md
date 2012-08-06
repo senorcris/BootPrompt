@@ -6,7 +6,7 @@ Creates a bootstrap modal wrapped in a backbone view.
 
 Code
 ====
-
+<pre>
 /*
 Description: Create a Bootstrap modal using a Backbone View, which has two buttons (ok & cancel).
 Author: SenorCris
@@ -126,3 +126,4 @@ var popup = new BootPrompt({
             this.$el.modal("hide");
         }
     });
+    </pre>
