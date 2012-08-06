@@ -4,7 +4,7 @@ Author: SenorCris
 Example:
 var popup = new BootPrompt({
                         width: 300,
-                        title: "Create a View",
+                        title: "What is your name?",
                         content: '<h4 class="pull-left popover-h4" >Name:</h4><input style="margin-left:8px;" placeholder="Name">',
                         ok: function ($el) {
                             var dataName = $el.find("input").val();
@@ -44,7 +44,7 @@ function() {
         render: function () {
             console.log("Popup openned");
             var Section = this._createSection(),
-                closeBtn = '<button type="button" class="close" data-dismiss="modal">×</button>',
+                closeBtn = '<button type="button" class="close" data-dismiss="modal">ï¿½</button>',
                 cancelBtn = '<a href="#" class="cancel btn">Cancel</a>',
                 okBtn = '<a href="#" class="ok btn btn-primary">Ok</a>',
                 title = "<h3>" + this.title + "</h3>",
