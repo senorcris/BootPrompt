@@ -7,11 +7,9 @@ Creates a bootstrap modal wrapped in a backbone view.
 width - Set the width of the modal.
 title - Set the title of the modal.
 content - Text/html for the body of the modal.
-ok/cancel - Called when the user presses the ok/cancel button. 
-<br/>
-  *`return true` to close the modal
-<br/>
-  *`return false` to keep the modal open. (Useful for validation)
+ok/cancel - Called when the user presses the ok/cancel button:
+    *`return true` to close the modal
+    *`return false` to keep the modal open. (Useful for validation)
 
 
 ##Options Example
