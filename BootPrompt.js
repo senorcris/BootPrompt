@@ -44,7 +44,7 @@ function() {
         render: function () {
             //console.log("Popup openned");
             var Section = this._createSection(),
-                closeBtn = '<button type="button" class="close" data-dismiss="modal">�</button>',
+                closeBtn = '<button type="button" class="close" data-dismiss="modal">x</button>',
                 cancelBtn = '<a href="#" class="cancel btn">Cancel</a>',
                 okBtn = '<a href="#" class="ok btn btn-primary">Ok</a>',
                 title = "<h3>" + this.title + "</h3>",
@@ -66,14 +66,7 @@ function() {
                     .append(body.$el)
                     .append(footer.$el)
                     .modal("show");
-            if (_.isNumber(modalWidth) || _.isString(modalWidth)) {
-                this.$el.css({
-                    'width': modalWidth,
-                    'margin-left': function () {
-                        return -($(this).width() / 2);
-                    }
-                });
-            }
+            this.setWidth(modalWidth);
             return this;
         },
         _createSection: function() {
@@ -117,6 +110,16 @@ function() {
         },
         hide: function () {
             this.$el.modal("hide");
+        },
+        setWidth: function (width) {
+            if (_.isNumber(width) || _.isString(width)) {
+                this.$el.css({
+                    'width': width,
+                    'margin-left': function () {
+                        return -($(this).width() / 2);
+                    }
+                });
+            }
         }
     });
 });
