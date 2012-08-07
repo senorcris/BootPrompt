@@ -10,6 +10,7 @@ content - Text/html for the body of the modal.
 ok/cancel - Called when the user presses the ok/cancel button. 
 <br/>
   *`return true` to close the modal
+<br/>
   *`return false` to keep the modal open. (Useful for validation)
 
 
